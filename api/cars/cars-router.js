@@ -5,8 +5,8 @@ const router = express.Router();
 
 router.get('/', (req, res, next) => {
   db('cars')
-    .then(fruits => {
-      res.json(fruits);
+    .then(cars => {
+      res.json(cars);
     })
     .catch(next);
 });
